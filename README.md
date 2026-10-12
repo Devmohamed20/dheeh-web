@@ -25,11 +25,14 @@ A modern, responsive static website for **DHEEH**, built faithfully from the off
 - **Cloudflare Pages Ready:** Includes `_headers` and `_redirects` configuration files.
 
 ## Running Locally
-To preview the website locally:
-```bash
-node serve.js
+Double-click `index.html` to open the website directly in your browser. You can also open it from PowerShell in the project folder:
+```powershell
+Start-Process .\index.html
 ```
-Then open your browser at [http://localhost:3000](http://localhost:3000).
+
+No Node.js, package installation, build step, or local server is required. Keep the `assets`, `css`, and `js` folders alongside the HTML files so images, styles, scripts, and page links load correctly.
+
+An internet connection is required for Tailwind CSS, Google Fonts, and icons loaded from their CDNs.
 
 ## Deploying to Cloudflare Pages
 1. Push this folder to your GitHub or GitLab repository.
