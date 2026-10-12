@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+  <title>About Us | DHEEH Health &amp; Wellness</title>
+  <meta name="description" content="Learn about DHEEH — our mission, vision, core values, and guiding philosophy dedicated to nurturing holistic health and honest wellness."/>
+  
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  
+  <!-- Tailwind CSS & Shared Styles -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-low": "#f2f4f2",
+            "surface-container-highest": "#e1e3e1",
+            "on-tertiary-fixed": "#1a1c1c",
+            "on-error": "#ffffff",
+            "on-primary-container": "#b7d0bd",
+            "on-tertiary-fixed-variant": "#454747",
+            "surface-container": "#eceeec",
+            "on-secondary-container": "#785a23",
+            "inverse-primary": "#b4cdba",
+            "on-tertiary-container": "#c9caca",
+            "on-surface-variant": "#424843",
+            "background": "#f8faf8",
+            "surface-dim": "#d8dad9",
+            "on-error-container": "#93000a",
+            "tertiary-fixed-dim": "#c6c6c7",
+            "primary-container": "#445a4b",
+            "primary": "#2d4335",
+            "on-secondary-fixed-variant": "#5d420b",
+            "on-primary-fixed": "#0a2014",
+            "error-container": "#ffdad6",
+            "inverse-surface": "#2e3130",
+            "outline-variant": "#c2c8c1",
+            "on-surface": "#191c1b",
+            "primary-fixed": "#d0e9d5",
+            "on-primary-fixed-variant": "#364c3d",
+            "on-secondary-fixed": "#271900",
+            "on-background": "#191c1b",
+            "surface-container-high": "#e6e9e7",
+            "error": "#ba1a1a",
+            "tertiary": "#3c3e3e",
+            "secondary": "#b59154",
+            "outline": "#737973",
+            "surface": "#f8faf8",
+            "tertiary-fixed": "#e2e2e2",
+            "primary-fixed-dim": "#b4cdba",
+            "surface-bright": "#f8faf8",
+            "secondary-container": "#fed490",
+            "secondary-fixed-dim": "#e9c07f",
+            "surface-tint": "#4d6454",
+            "secondary-fixed": "#ffdeab",
+            "inverse-on-surface": "#eff1ef",
+            "surface-container-lowest": "#ffffff",
+            "surface-variant": "#e1e3e1",
+            "on-primary": "#ffffff",
+            "tertiary-container": "#535555",
+            "on-secondary": "#ffffff",
+            "on-tertiary": "#ffffff"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "margin-mobile": "1.25rem",
+            "space-lg": "2rem",
+            "space-xl": "3.5rem",
+            "space-md": "1.25rem",
+            "gutter-mobile": "1rem",
+            "space-sm": "0.75rem",
+            "margin": "3rem",
+            "space-2xl": "5rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.375rem"
+          },
+          fontFamily: {
+            "headline-lg-mobile": ["Playfair Display", "serif"],
+            "display-hero-mobile": ["Playfair Display", "serif"],
+            "headline-md": ["Playfair Display", "serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-sm": ["Playfair Display", "serif"],
+            "label-caps": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "label-regular": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-xl-mobile": ["Playfair Display", "serif"],
+            "body-xl": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-xl": ["Playfair Display", "serif"],
+            "headline-lg": ["Playfair Display", "serif"],
+            "display-hero": ["Playfair Display", "serif"]
+          },
+          fontSize: {
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+            "display-hero-mobile": ["38px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+            "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "body-sm": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "label-regular": ["13px", { "lineHeight": "18px", "fontWeight": "500" }],
+            "headline-xl-mobile": ["30px", { "lineHeight": "40px", "fontWeight": "600" }],
+            "body-xl": ["18px", { "lineHeight": "30px", "fontWeight": "400" }],
+            "headline-xl": ["40px", { "lineHeight": "52px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "42px", "fontWeight": "500" }],
+            "display-hero": ["56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container min-h-screen flex flex-col justify-between">
+
+  <!-- Fixed Top Header -->
+  <header class="fixed top-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe">
+    <div class="h-20 max-w-7xl mx-auto px-margin-mobile md:px-margin flex items-center justify-between">
+      <!-- Brand Logo & Identity -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <img alt="DHEEH Logo" class="h-8 w-auto object-contain transition-transform group-hover:scale-105" src="assets/logo.png" onerror="this.src='https://lh3.googleusercontent.com/aida/AEtjO1UGEJoJHcXnzPv_X_8tuw2SaBOKuGvqtUiN0jLEFlmeTx1XHHHkLFHC3xD4ySQQsopwz4YaWY0RmpvyG-kOCwth0ixU9517KHh5dDDa42ggrHcdpiJW0OycLip3IrJwWTWhDwHHUME23O9AUPBhPAftLi9Btyt-02wFohX_ihj5eEQ7RleI8ywx26JmMnNUnr97WkotfG_-vpguliaCRje-ZbrKTadfQ6NFkRg73M41QZmUc_Oxqj6mcPT88qVPd2uzyzO65Zbk84U'"/>
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm tracking-[0.18em] text-primary leading-none uppercase">DHEEH</span>
+          <span class="font-label-caps text-[10px] tracking-[0.24em] text-secondary font-semibold uppercase mt-0.5">Health &amp; Wellness</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation & Controls -->
+      <div class="flex items-center gap-3">
+        <nav class="hidden md:flex items-center gap-1">
+          <a class="nav-link px-4 py-2 text-on-surface-variant hover:text-primary transition-colors font-label-regular text-label-regular" href="index.html">Home</a>
+          <a class="nav-link active px-4 py-2 text-primary font-semibold transition-colors font-label-regular text-label-regular" href="about.html">About Us</a>
+          <a class="nav-link px-4 py-2 text-on-surface-variant hover:text-primary transition-colors font-label-regular text-label-regular" href="faqs.html">FAQs</a>
+        </nav>
+        <span class="hidden md:inline-block w-px h-5 bg-outline-variant/40 mx-1"></span>
+        <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm">
+          <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+        </div>
+        <!-- Mobile Hamburger Toggle -->
+        <button id="mobileMenuToggle" class="md:hidden w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-surface-container-high transition-colors" aria-label="Toggle navigation">
+          <span id="mobileMenuIcon" class="material-symbols-outlined text-[20px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Responsive Mobile Dropdown Drawer -->
+    <div id="mobile-menu" class="menu-closed fixed top-20 left-0 w-full bg-surface-container-lowest/98 backdrop-blur-xl border-b border-surface-container shadow-xl z-40 md:hidden px-6 py-5 flex flex-col gap-3">
+      <nav class="flex flex-col gap-2">
+        <a class="flex items-center gap-3 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors font-body-md" href="index.html">
+          <span class="material-symbols-outlined text-[22px]">spa</span>
+          <span>Home</span>
+        </a>
+        <a class="flex items-center gap-3 px-4 py-3 rounded-xl bg-surface-container-low text-primary font-semibold font-body-md" href="about.html">
+          <span class="material-symbols-outlined text-secondary text-[22px]">auto_awesome</span>
+          <span>About Us</span>
+        </a>
+        <a class="flex items-center gap-3 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors font-body-md" href="faqs.html">
+          <span class="material-symbols-outlined text-[22px]">help_outline</span>
+          <span>Frequently Asked Questions</span>
+        </a>
+      </nav>
+      <div class="pt-3 border-t border-surface-container flex items-center justify-between text-xs text-on-surface-variant">
+        <span>Inquiries: contact@dheeh.com</span>
+        <span class="text-secondary font-medium">Est. 2026</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-1 w-full pt-20 pb-28 md:pb-12 bg-surface">
+    <div class="flex flex-col w-full">
+      
+      <!-- Interactive Ambient Header Banner -->
+      <section class="relative w-full px-margin-mobile md:px-margin pt-6 pb-12 flex flex-col items-center text-center overflow-hidden">
+        <!-- Subtle Golden Halo Glow -->
+        <div class="absolute -top-20 left-1/2 -translate-x-1/2 w-80 h-80 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+        <!-- Category Pill Badge -->
+        <div class="relative inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary-container/30 backdrop-blur-md mb-4 shadow-sm">
+          <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          <span class="font-label-caps text-label-caps text-on-secondary-container tracking-[0.2em] font-semibold uppercase">About DHEEH</span>
+        </div>
+        <!-- Hero Headline -->
+        <h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-primary max-w-2xl mx-auto leading-tight mb-4">
+          Dedicated to Nurturing Health, <span class="italic font-normal text-secondary">Naturally.</span>
+        </h1>
+        <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto leading-relaxed">
+          Born from a profound respect for cellular balance and botanical wisdom, DHEEH emerges as an intentional sanctuary for purposeful living and mindful vitality.
+        </p>
+        <!-- Refined Divider Motif -->
+        <div class="flex items-center gap-2 mt-6 text-secondary/40">
+          <span class="w-8 h-px bg-secondary/30"></span>
+          <span class="material-symbols-outlined text-[14px]">spa</span>
+          <span class="w-8 h-px bg-secondary/30"></span>
+        </div>
+      </section>
+
+      <!-- Section A: About DHEEH Narrative & Atmospheric Visual -->
+      <section class="w-full px-margin-mobile md:px-margin mb-space-xl">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-8 items-center bg-surface-container-lowest p-6 md:p-8 rounded-xl shadow-[0_8px_32px_-4px_rgba(31,46,36,0.04)]">
+          <!-- Imagery with Botanical Frame -->
+          <div class="relative w-full md:w-1/2 rounded-lg overflow-hidden group">
+            <img alt="Serene wellness reflection in a sunlit sanctuary" class="w-full h-80 md:h-96 object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105" src="assets/about-sanctuary.jpg" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuAGiL_gyaBl5tBsVmlF77dzgcQxJIDKXhsIeurJb2UeBQPFzfGNsovV_3TAsVQDEsoKWlYTrrHogvPlqIspQcIYY6DONcm4-Pr9qAy1JsIIdpU7Q07xnsDIQxYGzHfa1iau2AaV1ekkCS4pSyiI9Pk-hkXfhs3hAPmGQ0zq_RI1CDnsOr1Sm_rLIZcFlo-81hbZyMBJLjwSvMNn7cOcPuoo2UltzL9Miv2hCABPAhf7ei9nq_YhiUA37A'"/>
+            <!-- Ambient Warm Tint Scrim -->
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent pointer-events-none"></div>
+            <div class="absolute bottom-4 left-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md px-4 py-2.5 rounded-lg flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary text-[20px]">psychology_alt</span>
+                <span class="font-label-caps text-label-caps text-primary tracking-wider uppercase font-semibold">Mindful Presence</span>
+              </div>
+              <span class="font-label-caps text-[11px] text-on-surface-variant italic">Inner Equilibrium</span>
+            </div>
+          </div>
+          <!-- Narrative Copy -->
+          <div class="w-full md:w-1/2 flex flex-col gap-4 text-left">
+            <div class="inline-flex items-center gap-1.5 text-secondary">
+              <span class="material-symbols-outlined text-[16px]">eco</span>
+              <span class="font-label-caps text-label-caps uppercase tracking-wider font-semibold">Our Genesis</span>
+            </div>
+            <h2 class="font-headline-xl-mobile md:font-headline-lg text-headline-xl-mobile md:text-headline-lg text-primary leading-tight">
+              Harmonizing Scientific Rigor &amp; Organic Wisdom
+            </h2>
+            <p class="font-body-sm md:font-body-md text-body-sm md:text-body-md text-on-surface-variant leading-relaxed">
+              At DHEEH, we perceive wellness not as an elusive ideal, but as an intimate, rhythmic dialogue with one’s own body. Founded as a modern health and supplement collective, our purpose is rooted in formulating pure, bioavailable answers to everyday stress, cognitive depletion, and cellular renewal.
+            </p>
+            <p class="font-body-sm md:font-body-md text-body-sm md:text-body-md text-on-surface-variant leading-relaxed">
+              We strip away superfluous industry rhetoric, equipping conscious individuals with honest education and deliberate nutritional supplements, empowering you to author your own wellness legacy with calm confidence.
+            </p>
+            <!-- Signature Clinical Accreditation Micro-Row -->
+            <div class="flex items-center gap-3 pt-2">
+              <div class="flex items-center gap-1.5 bg-surface-container-low px-3 py-1.5 rounded-full">
+                <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                <span class="font-label-caps text-[11px] text-primary font-semibold tracking-wider uppercase">Consciously Sourced</span>
+              </div>
+              <div class="flex items-center gap-1.5 bg-surface-container-low px-3 py-1.5 rounded-full">
+                <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                <span class="font-label-caps text-[11px] text-primary font-semibold tracking-wider uppercase">Clean Extraction</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section B & C: Mission & Vision Split Layout -->
+      <section class="w-full px-margin-mobile md:px-margin mb-space-xl">
+        <div class="max-w-4xl mx-auto flex flex-col gap-6">
+          <div class="text-center max-w-lg mx-auto mb-2">
+            <span class="font-label-caps text-label-caps text-secondary font-semibold uppercase tracking-[0.2em]">Our Compass</span>
+            <h2 class="font-headline-xl-mobile md:font-headline-lg text-headline-xl-mobile md:text-headline-lg text-primary mt-1">Intentional Direction</h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <!-- Mission Card -->
+            <div class="relative bg-surface-container-lowest p-6 md:p-8 rounded-xl shadow-[0_8px_32px_-4px_rgba(31,46,36,0.04)] flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+              <div>
+                <div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary mb-5 shadow-sm">
+                  <span class="material-symbols-outlined text-[24px]">flag</span>
+                </div>
+                <span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.18em] font-semibold">Purpose In Action</span>
+                <h3 class="font-headline-lg-mobile md:font-headline-md text-headline-lg-mobile md:text-headline-md text-primary mt-1 mb-3">
+                  Our Mission
+                </h3>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  To help people actively nurture their health, wellness, and everyday lifestyle through quality health and supplement products backed by transparent education and genuine integrity.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined text-[16px]">check_circle</span>
+                <span class="font-label-caps text-[11px] font-semibold uppercase tracking-wider text-on-surface-variant">Daily Holistic Support</span>
+              </div>
+            </div>
+            <!-- Vision Card -->
+            <div class="relative bg-primary text-on-primary p-6 md:p-8 rounded-xl shadow-[0_12px_36px_-6px_rgba(45,67,53,0.18)] flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-8 -top-8 w-32 h-32 bg-secondary/20 rounded-full blur-2xl pointer-events-none"></div>
+              <div>
+                <div class="w-12 h-12 rounded-xl bg-on-primary/10 flex items-center justify-center text-secondary-fixed mb-5 backdrop-blur-md">
+                  <span class="material-symbols-outlined text-[24px]">visibility</span>
+                </div>
+                <span class="font-label-caps text-label-caps text-secondary-fixed uppercase tracking-[0.18em] font-semibold">Future Horizon</span>
+                <h3 class="font-headline-lg-mobile md:font-headline-md text-headline-lg-mobile md:text-headline-md text-on-primary mt-1 mb-3">
+                  Our Vision
+                </h3>
+                <p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+                  To become a globally recognized and deeply trusted health and wellness brand known for unwavering integrity, thoughtful formulation, and uncompromising customer care.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 flex items-center gap-2 text-secondary-fixed">
+                <span class="material-symbols-outlined text-[16px]">stars</span>
+                <span class="font-label-caps text-[11px] font-semibold uppercase tracking-wider">Uncompromising Purity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section D: Core Values Pillars -->
+      <section class="w-full px-margin-mobile md:px-margin mb-space-xl">
+        <div class="max-w-4xl mx-auto flex flex-col gap-6">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-2">
+            <div>
+              <span class="font-label-caps text-label-caps text-secondary font-semibold uppercase tracking-[0.2em]">Foundational Tenets</span>
+              <h2 class="font-headline-xl-mobile md:font-headline-lg text-headline-xl-mobile md:text-headline-lg text-primary mt-1">Our Core Values</h2>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+              Four unyielding pillars that preserve the authenticity of everything we create, examine, and share.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Value 1: Quality -->
+            <div class="bg-surface-container-lowest p-6 rounded-xl shadow-[0_4px_24px_rgba(31,46,36,0.03)] hover:shadow-[0_8px_32px_rgba(31,46,36,0.06)] transition-all flex gap-4">
+              <div class="w-12 h-12 rounded-xl bg-secondary-container/20 flex-shrink-0 flex items-center justify-center text-secondary">
+                <span class="material-symbols-outlined text-[24px]">verified</span>
+              </div>
+              <div class="flex flex-col">
+                <div class="flex items-center gap-2">
+                  <span class="font-label-caps text-[10px] text-secondary font-bold tracking-widest">01</span>
+                  <h3 class="font-headline-sm text-headline-sm text-primary">Quality</h3>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mt-2">
+                  Meticulous attention to active ingredients, clean extraction methods, and rigorous safety certifications. We settle for nothing less than clinical-grade standard.
+                </p>
+              </div>
+            </div>
+            <!-- Value 2: Integrity -->
+            <div class="bg-surface-container-lowest p-6 rounded-xl shadow-[0_4px_24px_rgba(31,46,36,0.03)] hover:shadow-[0_8px_32px_rgba(31,46,36,0.06)] transition-all flex gap-4">
+              <div class="w-12 h-12 rounded-xl bg-primary-container/10 flex-shrink-0 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-[24px]">shield</span>
+              </div>
+              <div class="flex flex-col">
+                <div class="flex items-center gap-2">
+                  <span class="font-label-caps text-[10px] text-secondary font-bold tracking-widest">02</span>
+                  <h3 class="font-headline-sm text-headline-sm text-primary">Integrity</h3>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mt-2">
+                  Radical transparency in every communication and ingredient profile. We believe true trust is earned through honest discourse and ethical stewardship.
+                </p>
+              </div>
+            </div>
+            <!-- Value 3: Customer Care -->
+            <div class="bg-surface-container-lowest p-6 rounded-xl shadow-[0_4px_24px_rgba(31,46,36,0.03)] hover:shadow-[0_8px_32px_rgba(31,46,36,0.06)] transition-all flex gap-4">
+              <div class="w-12 h-12 rounded-xl bg-secondary-container/20 flex-shrink-0 flex items-center justify-center text-secondary">
+                <span class="material-symbols-outlined text-[24px]">favorite</span>
+              </div>
+              <div class="flex flex-col">
+                <div class="flex items-center gap-2">
+                  <span class="font-label-caps text-[10px] text-secondary font-bold tracking-widest">03</span>
+                  <h3 class="font-headline-sm text-headline-sm text-primary">Customer Care</h3>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mt-2">
+                  Your everyday vitality, peace of mind, and physiological harmony guide every decision we make. We consider ourselves custodians of your well-being.
+                </p>
+              </div>
+            </div>
+            <!-- Value 4: Continuous Improvement -->
+            <div class="bg-surface-container-lowest p-6 rounded-xl shadow-[0_4px_24px_rgba(31,46,36,0.03)] hover:shadow-[0_8px_32px_rgba(31,46,36,0.06)] transition-all flex gap-4">
+              <div class="w-12 h-12 rounded-xl bg-primary-container/10 flex-shrink-0 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-[24px]">auto_awesome</span>
+              </div>
+              <div class="flex flex-col">
+                <div class="flex items-center gap-2">
+                  <span class="font-label-caps text-[10px] text-secondary font-bold tracking-widest">04</span>
+                  <h3 class="font-headline-sm text-headline-sm text-primary">Continuous Improvement</h3>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mt-2">
+                  Wellness science never rests, and neither do we. Constantly refining formulations, learning from emerging biochemical research to serve your longevity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section E: Philosophy Interactive Spotlight -->
+      <section class="w-full px-margin-mobile md:px-margin mb-space-xl">
+        <div class="max-w-4xl mx-auto bg-surface-container p-6 md:p-10 rounded-xl relative overflow-hidden">
+          <!-- Decorative Backdrop Floral Graphic -->
+          <div class="absolute -right-12 -bottom-12 opacity-10 text-primary pointer-events-none select-none">
+            <svg fill="currentColor" height="240" viewbox="0 0 100 100" width="240">
+              <path d="M50 0 C60 30 70 40 100 50 C70 60 60 70 50 100 C40 70 30 60 0 50 C30 40 40 30 50 0 Z"></path>
+            </svg>
+          </div>
+          <div class="relative z-10 max-w-2xl">
+            <div class="inline-flex items-center gap-2 text-secondary mb-3">
+              <span class="material-symbols-outlined text-[18px]">self_improvement</span>
+              <span class="font-label-caps text-label-caps font-semibold uppercase tracking-[0.2em]">Our Guiding Philosophy</span>
+            </div>
+            <h2 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary leading-tight mb-4">
+              Wellness is an Ongoing Journey.
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">
+              Vitality is never an overnight fix or a transient trend. It is an enduring daily ritual of conscious balance, whole-body nourishment, and deep self-compassion.
+            </p>
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+              Whether you are embarking upon your first conscious nutritional regimen or seeking refined clarity for an already elevated lifestyle, <span class="font-semibold text-primary">DHEEH stands proudly beside you</span> through every quiet sunrise, mindful sip, and transformative milestone.
+            </p>
+            <!-- Quote Tag -->
+            <div class="bg-surface-container-lowest/80 backdrop-blur-sm p-4 rounded-lg flex items-start gap-3">
+              <span class="material-symbols-outlined text-secondary text-[24px]">format_quote</span>
+              <div>
+                <p class="font-headline-sm text-[16px] italic text-primary leading-snug">
+                  "When you honor the natural intelligence of the body, energy ceases to be a pursuit and becomes your natural state."
+                </p>
+                <span class="font-label-caps text-[11px] text-on-surface-variant uppercase tracking-wider block mt-1.5 font-semibold">
+                  — The DHEEH Formulation Guild
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section F: Informational Inquiry / FAQs Next Steps CTA -->
+      <section class="w-full px-margin-mobile md:px-margin mb-8">
+        <div class="max-w-4xl mx-auto bg-surface-container-lowest p-8 md:p-10 rounded-xl shadow-[0_8px_32px_-4px_rgba(31,46,36,0.04)] text-center flex flex-col items-center gap-4 relative overflow-hidden">
+          <!-- Muted Gold Highlight Bar -->
+          <div class="w-12 h-1 bg-secondary rounded-full mb-1"></div>
+          <div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary mb-1">
+            <span class="material-symbols-outlined text-[24px]">contact_support</span>
+          </div>
+          <h3 class="font-headline-lg-mobile md:font-headline-md text-headline-lg-mobile md:text-headline-md text-primary">
+            Have questions about our brand or upcoming offerings?
+          </h3>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-lg leading-relaxed">
+            Explore our curated index of transparency reports, formulation insights, and answers to common inquiries regarding our wellness standard.
+          </p>
+          <div class="pt-2">
+            <a class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-all duration-300 shadow-md hover:shadow-lg group" href="faqs.html">
+              <span class="font-label-regular text-label-regular font-semibold">View Frequently Asked Questions</span>
+              <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Universal Site Footer -->
+    <footer class="w-full bg-primary-container text-on-primary mt-space-2xl pt-space-xl pb-space-lg px-margin-mobile md:px-margin">
+      <div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+          <!-- Col 1 -->
+          <div class="flex flex-col gap-space-xs">
+            <div class="flex items-center gap-2 mb-1">
+              <img alt="DHEEH Logo" class="h-7 w-auto object-contain brightness-0 invert" src="assets/logo.png" onerror="this.src='https://lh3.googleusercontent.com/aida/AEtjO1UGEJoJHcXnzPv_X_8tuw2SaBOKuGvqtUiN0jLEFlmeTx1XHHHkLFHC3xD4ySQQsopwz4YaWY0RmpvyG-kOCwth0ixU9517KHh5dDDa42ggrHcdpiJW0OycLip3IrJwWTWhDwHHUME23O9AUPBhPAftLi9Btyt-02wFohX_ihj5eEQ7RleI8ywx26JmMnNUnr97WkotfG_-vpguliaCRje-ZbrKTadfQ6NFkRg73M41QZmUc_Oxqj6mcPT88qVPd2uzyzO65Zbk84U'"/>
+              <span class="font-headline-sm text-headline-sm tracking-[0.18em] text-on-primary uppercase">DHEEH</span>
+            </div>
+            <p class="font-headline-sm text-[16px] italic text-secondary-fixed leading-snug">Your Wellness, Our Priority.</p>
+            <p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed mt-1">
+              A dedicated wellness collective engineering science-backed daily rituals, organic formulations, and mindful vitality programs designed to restore internal harmony.
+            </p>
+          </div>
+          <!-- Col 2 -->
+          <div class="flex flex-col gap-space-xs">
+            <h4 class="font-label-caps text-label-caps text-secondary-fixed uppercase tracking-wider mb-1">Quick Links</h4>
+            <nav class="flex flex-col gap-2 font-body-sm text-body-sm text-on-primary-container">
+              <a class="hover:text-secondary-fixed transition-colors" href="index.html">Home</a>
+              <a class="hover:text-secondary-fixed transition-colors" href="about.html">About Us</a>
+              <a class="hover:text-secondary-fixed transition-colors" href="faqs.html">Frequently Asked Questions</a>
+            </nav>
+          </div>
+          <!-- Col 3 -->
+          <div class="flex flex-col gap-space-xs">
+            <h4 class="font-label-caps text-label-caps text-secondary-fixed uppercase tracking-wider mb-1">Contact &amp; Sanctuary</h4>
+            <div class="flex flex-col gap-2 font-body-sm text-body-sm text-on-primary-container">
+              <span>contact@dheeh.com</span>
+              <span>+1 (800) 555-DHEEH</span>
+              <span>Los Angeles, California</span>
+            </div>
+            <div class="flex items-center gap-3 mt-3">
+              <span class="w-8 h-8 rounded-full bg-on-primary-fixed/20 flex items-center justify-center text-secondary-fixed">
+                <span class="material-symbols-outlined text-[18px]">spa</span>
+              </span>
+              <span class="w-8 h-8 rounded-full bg-on-primary-fixed/20 flex items-center justify-center text-secondary-fixed">
+                <span class="material-symbols-outlined text-[18px]">eco</span>
+              </span>
+              <span class="w-8 h-8 rounded-full bg-on-primary-fixed/20 flex items-center justify-center text-secondary-fixed">
+                <span class="material-symbols-outlined text-[18px]">verified</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-px bg-secondary-fixed/30 my-2"></div>
+        <div class="flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left font-label-caps text-[11px] text-on-primary-container">
+          <p>© 2026 DHEEH. All Rights Reserved.</p>
+          <div class="flex items-center gap-4 text-secondary-fixed">
+            <span class="hover:underline cursor-pointer">Privacy Policy</span>
+            <span>•</span>
+            <span class="hover:underline cursor-pointer">Terms &amp; Conditions</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Mobile Bottom Tab Navigation Bar -->
+  <nav class="fixed bottom-0 w-full z-50 pb-safe md:hidden bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.06)]" data-active-classes="text-primary font-semibold">
+    <div class="flex justify-around items-center h-16 px-4">
+      <a class="flex flex-col items-center justify-center gap-1 w-16 h-12 text-on-surface-variant transition-colors" href="index.html">
+        <span class="material-symbols-outlined text-[22px]">spa</span>
+        <span class="font-label-caps text-[10px]">Home</span>
+      </a>
+      <a aria-current="page" class="flex flex-col items-center justify-center gap-1 w-16 h-12 transition-colors text-primary font-semibold" href="about.html">
+        <span class="material-symbols-outlined text-[22px]">auto_awesome</span>
+        <span class="font-label-caps text-[10px]">About</span>
+      </a>
+      <a class="flex flex-col items-center justify-center gap-1 w-16 h-12 text-on-surface-variant transition-colors" href="faqs.html">
+        <span class="material-symbols-outlined text-[22px]">help_outline</span>
+        <span class="font-label-caps text-[10px]">FAQs</span>
+      </a>
+    </div>
+  </nav>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
